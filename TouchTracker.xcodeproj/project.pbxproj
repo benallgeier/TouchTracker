@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83AE8D471DA6C76D00EB751C /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AE8D461DA6C76D00EB751C /* DrawView.swift */; };
+		83ED60381DAACBC100FB60CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ED60371DAACBC100FB60CD /* ViewController.swift */; };
 		83F3AB851DA6AD3D00E499F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3AB841DA6AD3D00E499F7 /* AppDelegate.swift */; };
-		83F3AB871DA6AD3D00E499F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3AB861DA6AD3D00E499F7 /* ViewController.swift */; };
 		83F3AB8A1DA6AD3D00E499F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F3AB881DA6AD3D00E499F7 /* Main.storyboard */; };
 		83F3AB8C1DA6AD3D00E499F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83F3AB8B1DA6AD3D00E499F7 /* Assets.xcassets */; };
 		83F3AB8F1DA6AD3D00E499F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F3AB8D1DA6AD3D00E499F7 /* LaunchScreen.storyboard */; };
+		83F3AB971DA6B08C00E499F7 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3AB961DA6B08C00E499F7 /* Line.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		83AE8D461DA6C76D00EB751C /* DrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
+		83ED60371DAACBC100FB60CD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		83F3AB811DA6AD3D00E499F7 /* TouchTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83F3AB841DA6AD3D00E499F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		83F3AB861DA6AD3D00E499F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		83F3AB891DA6AD3D00E499F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83F3AB8B1DA6AD3D00E499F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83F3AB8E1DA6AD3D00E499F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83F3AB901DA6AD3D00E499F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83F3AB961DA6B08C00E499F7 /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +58,10 @@
 		83F3AB831DA6AD3D00E499F7 /* TouchTracker */ = {
 			isa = PBXGroup;
 			children = (
+				83F3AB961DA6B08C00E499F7 /* Line.swift */,
+				83AE8D461DA6C76D00EB751C /* DrawView.swift */,
+				83ED60371DAACBC100FB60CD /* ViewController.swift */,
 				83F3AB841DA6AD3D00E499F7 /* AppDelegate.swift */,
-				83F3AB861DA6AD3D00E499F7 /* ViewController.swift */,
 				83F3AB881DA6AD3D00E499F7 /* Main.storyboard */,
 				83F3AB8B1DA6AD3D00E499F7 /* Assets.xcassets */,
 				83F3AB8D1DA6AD3D00E499F7 /* LaunchScreen.storyboard */,
@@ -91,7 +97,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = ballgeier;
 				TargetAttributes = {
 					83F3AB801DA6AD3D00E499F7 = {
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83F3AB871DA6AD3D00E499F7 /* ViewController.swift in Sources */,
+				83F3AB971DA6B08C00E499F7 /* Line.swift in Sources */,
+				83AE8D471DA6C76D00EB751C /* DrawView.swift in Sources */,
+				83ED60381DAACBC100FB60CD /* ViewController.swift in Sources */,
 				83F3AB851DA6AD3D00E499F7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -182,6 +190,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -232,6 +241,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -302,6 +312,7 @@
 				83F3AB951DA6AD3D00E499F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
